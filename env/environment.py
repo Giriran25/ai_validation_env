@@ -23,7 +23,7 @@ class AIValidationEnv:
         }
 
     def step(self, action):
-        # ✅ Correct grading (only score returned)
+        #  Correct grading (only score returned)
         score = grade(action, self.current_task["ground_truth"])
         info = {}
 
