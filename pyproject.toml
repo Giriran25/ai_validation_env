@@ -1,0 +1,17 @@
+[project]
+name = "ai-validation-env"
+version = "0.1.0"
+description = "AI Decision Validation Environment using OpenEnv"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openai",
+    "openenv-core"
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[tool.openenv]
+entrypoint = "server.app:main"
