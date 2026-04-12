@@ -19,13 +19,14 @@ class AIValidationEnv:
             },
             "reward": 0.0,
             "done": False,
-            "info": {}
+            "info": {"task_id": self.current_task["id"]}
         }
 
     def step(self, action):
-        #  Correct grading (only score returned)
+        current_task_id = self.current_task["id"]
         score = grade(action, self.current_task["ground_truth"])
-        info = {}
+
+        info = {"task_id": current_task_id}
 
         # Move to next task
         self.current_index += 1

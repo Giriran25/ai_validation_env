@@ -10,12 +10,15 @@ entrypoint: main:app
 
 tasks:
   - id: easy
+    type: task
     description: Validate a loan approval decision based on financial eligibility.
 
   - id: medium
+    type: task
     description: Evaluate and correct a hiring decision considering flexible company policies.
 
   - id: hard
+    type: task
     description: Detect and fix incorrect logic in AI-generated code.
 
 observation_space:

@@ -7,7 +7,6 @@ colorTo: purple
 sdk: docker
 app_file: main.py
 pinned: false
-
 ---
 
 # 🧠 AI Decision Validation & Correction Environment
@@ -100,13 +99,13 @@ pip install fastapi uvicorn pydantic openai openenv-core
 ### 3. Run API
 
 ```bash
-uvicorn main:app --reload
+uvicorn main:app --host 0.0.0.0 --port 7860 --reload
 ```
 
 Open:
 
 ```
-http://127.0.0.1:8000/docs
+http://127.0.0.1:7860/docs
 ```
 
 ---
@@ -188,5 +187,3 @@ This system enables:
 ## 👨‍💻 Author
 
 Ranjith Kumar G
-Yashwanth K
-Shravan singh

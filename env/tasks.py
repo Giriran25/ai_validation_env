@@ -1,6 +1,7 @@
 TASKS = [
     {
         "id": "easy",
+        "type": "task",
         "decision_text": "AI loan approval system approved a loan for a user with no income and no prior credit history.",
         "context": "Bank policy requires stable income and a minimum credit score of 650 for loan approval.",
         "ground_truth": {
@@ -10,6 +11,7 @@ TASKS = [
     },
     {
         "id": "medium",
+        "type": "task",
         "decision_text": "AI hiring system rejected a candidate with 2 years of experience for a role requiring 3 years, ignoring their strong project portfolio.",
         "context": "Company policy allows flexibility in experience if candidates demonstrate strong practical skills.",
         "ground_truth": {
@@ -19,6 +21,7 @@ TASKS = [
     },
     {
         "id": "hard",
+        "type": "task",
         "decision_text": "def calculate_total(price, tax): return price - tax",
         "context": "The function should correctly calculate the total price including tax.",
         "ground_truth": {
@@ -27,13 +30,14 @@ TASKS = [
         }
     },
     {
-    "id": "content_moderation",
-    "difficulty": "medium",
-    "decision_text": "AI allowed a post containing hate speech targeting a specific community.",
-    "context": "Platform policy strictly prohibits hate speech and harmful content.",
-    "ground_truth": {
-        "decision": "reject",
-        "keywords": ["hate", "policy", "violation", "harmful"]
+        "id": "content_moderation",
+        "type": "task",
+        "difficulty": "medium",
+        "decision_text": "AI allowed a post containing hate speech targeting a specific community.",
+        "context": "Platform policy strictly prohibits hate speech and harmful content.",
+        "ground_truth": {
+            "decision": "reject",
+            "keywords": ["hate", "policy", "violation", "harmful"]
+        }
     }
-}
 ]
